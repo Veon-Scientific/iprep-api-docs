@@ -230,8 +230,8 @@ table.index td { text-align: left; vertical-align: top; }
     height: 0px; 
 }
 #content h2 a:link { font-weight: bold !important }
-#content h2 a:link { font-weight: normal; color: #051019; text-decoration: none; }
-#content h2 a:visited { font-weight: normal; color: #051019; text-decoration: none; }
+/*#content h2 a:link { font-weight: normal; color: #051019; text-decoration: none; }
+#content h2 a:visited { font-weight: normal; color: #051019; text-decoration: none; }*/
 
 
 #about {
