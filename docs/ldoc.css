@@ -291,8 +291,10 @@ table.module_list td.summary { width: 100%; }
 
 table.module_list a:link { font-weight: bold !important }
 table.module_list a:link { font-weight: normal; color: #051019; text-decoration: none; }
+table.module_list a:link { font-weight: normal; color: #051019; text-decoration: none; }
 
 table.function_list a:link { font-weight: bold !important }
+table.function_list a:link { font-weight: normal; color: #051019; text-decoration: none; }
 table.function_list a:link { font-weight: normal; color: #051019; text-decoration: none; }
 
 table.function_list {
