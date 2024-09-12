@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>i.prep api v2.0.0-beta</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>i.prep api <h6 class=version>v2.0.0-beta</h6></h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Libraries</h2>
+<ul class="nowrap">
+  <li><a href="../libraries/veon.html">veon</a></li>
+  <li><a href="../libraries/flow.html">flow</a></li>
+  <li><a href="../libraries/serial.html">serial</a></li>
+  <li><strong>deck</strong></li>
+</ul>
+<h2>Manual</h2>
+<ul class="nowrap">
+  <li><a href="../manual/json-api.md.html">json-api</a></li>
+  <li><a href="../manual/labware.md.html">labware</a></li>
+  <li><a href="../manual/pylabrobot.md.html">pylabrobot</a></li>
+  <li><a href="../manual/python-example.md.html">python-example</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/basic-liquidhandling.lua.html">basic-liquidhandling.lua</a></li>
+  <li><a href="../examples/flow.lua.html">flow.lua</a></li>
+  <li><a href="../examples/movement.lua.html">movement.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>deck</code></h1>
+<p>i.prep lua deck module</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#getitem">getitem (zone, position)</a></td>
+	<td class="summary">Returns a map of information about the item in the zone position.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getitems">getitems (zone)</a></td>
+	<td class="summary">Returns a list of coordinates in a zone.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getnexttip">getnexttip (zone)</a></td>
+	<td class="summary">Returns the position of the next tip in the given zone.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tipavailable">tipavailable (zone)</a></td>
+	<td class="summary">Returns true when a tip is available (unconsumed) in the given zone.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#resettips">resettips (zone)</a></td>
+	<td class="summary">Sets all tip consumed flags to unconsumed in the given zone.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "getitem"></a>
+    <strong>getitem (zone, position)</strong>
+    </dt>
+    <dd>
+    Returns a map of information about the item in the zone position.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zone</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Zone the item is in
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Position the item is in
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">deck.getitem(<span class="string">"Zone2"</span>, <span class="string">"A1"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getitems"></a>
+    <strong>getitems (zone)</strong>
+    </dt>
+    <dd>
+    Returns a list of coordinates in a zone.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zone</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Zone to get the items of
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">deck.getitems(<span class="string">"Zone2"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "getnexttip"></a>
+    <strong>getnexttip (zone)</strong>
+    </dt>
+    <dd>
+    Returns the position of the next tip in the given zone. </p>
+
+<p>When no tips exist or are all consumed it will return an empty string.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zone</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Zone to find the next tip in
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">deck.getnexttip(<span class="string">"Zone1"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "tipavailable"></a>
+    <strong>tipavailable (zone)</strong>
+    </dt>
+    <dd>
+    Returns true when a tip is available (unconsumed) in the given zone.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zone</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Zone to look for a tip in
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">deck.tipavailable(<span class="string">"Zone1"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "resettips"></a>
+    <strong>resettips (zone)</strong>
+    </dt>
+    <dd>
+    Sets all tip consumed flags to unconsumed in the given zone.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zone</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Zone to reset the consumed tip flag of
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">deck.resettips(<span class="string">"Zone1"</span>)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2024-09-12 10:29:22 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
