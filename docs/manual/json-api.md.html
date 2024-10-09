@@ -149,11 +149,11 @@
 <p><a name="Assign_Object_to_Zone"></a></p>
 <h2>Assign Object to Zone</h2>
 
-<p><strong>Command:</strong> <code>assign_zone</code></p>
+<p><strong>Command:</strong> <code>assign_zone_object</code></p>
 
 <p>Sets the object data for the given zone.</p>
 
-<p>The i.prep object generator can generate uniform objects. </p>
+<p>The <a href="https://veon-scientific.github.io/obprep/">i.prep object generator</a> can generate uniform objects. </p>
 
 <p>Lua equivalent: N/A</p>
 
@@ -167,43 +167,71 @@
     <span class="string">"zone"</span>: <span class="string">"Zone1"</span>,
     <span class="string">"object_data"</span>: {
         <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,
-        <span class="string">"uuid"</span>: <span class="string">"ef1a8da1-291b-4993-b0cb-d133dcbb244b"</span>,
+        <span class="string">"uuid"</span>: <span class="string">"60eb2e34-75f8-4571-ac39-17c2f00fc333"</span>,
+        <span class="string">"label"</span>: <span class="string">"Empty Example Plate"</span>,
         <span class="string">"plateData"</span>: {
-            <span class="string">"uuid"</span>: <span class="string">"a87db0fa-e37a-4fb1-be7c-7aaac36952f6"</span>,
-            <span class="string">"displayName"</span>: <span class="string">"Empty Example Plate"</span>,
-            <span class="string">"dimensions"</span>: {
-                <span class="string">"x"</span>: <span class="number">127.76</span>,
-                <span class="string">"y"</span>: <span class="number">85.48</span>,
-                <span class="string">"z"</span>: <span class="number">15</span>
-            },
-            <span class="string">"locations"</span>: [{
-                <span class="string">"uuid"</span>: <span class="string">"8b84e4bb-001a-40b0-8489-4290edf03530"</span>,
-                <span class="string">"x"</span>: <span class="number">8</span>,
-                <span class="string">"y"</span>: <span class="number">73.48</span>,
-                <span class="string">"coord"</span>: <span class="string">"L8"</span>,
-                <span class="string">"radius"</span>: <span class="number">0</span>
-            }]
-        },
-        <span class="string">"items"</span>: [{
-            <span class="string">"uuid"</span>: <span class="string">"dc7a5f01-013e-4033-a62f-b8a7250624fc"</span>,
-            <span class="string">"locationId"</span>: <span class="string">"8b84e4bb-001a-40b0-8489-4290edf03530"</span>,
-            <span class="string">"item"</span>: {
-                <span class="string">"uuid"</span>: <span class="string">"8e4161ae-4ac8-482d-a3a8-c387f331babd"</span>,
-                <span class="string">"type"</span>: <span class="string">"well"</span>,
-                <span class="string">"physicalProperties"</span>: {
-                    <span class="string">"radius"</span>: <span class="number">0</span>,
-                    <span class="string">"depth"</span>: <span class="number">0</span>,
-                    <span class="string">"capacity"</span>: <span class="number">0</span>,
-                    <span class="string">"consumable_clearance"</span>: <span class="number">0</span>,
-                    <span class="string">"travel_clearance"</span>: <span class="number">0</span>,
-                    <span class="string">"length"</span>: <span class="number">0</span>
-                },
-                <span class="string">"runtimeData"</span>: {
-                    <span class="string">"Volume"</span>: <span class="number">0</span>,
-                    <span class="string">"Consumed"</span>: <span class="keyword">false</span>
-                }
+          <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,
+          <span class="string">"uuid"</span>: <span class="string">"72713be2-1ffe-430e-ba69-350b39402e56"</span>,
+          <span class="string">"displayName"</span>: <span class="string">"Empty Example Plate"</span>,
+          <span class="string">"dimensions"</span>: {
+            <span class="string">"x"</span>: <span class="number">127.76</span>,
+            <span class="string">"y"</span>: <span class="number">85.48</span>,
+            <span class="string">"z"</span>: <span class="number">15</span>
+          },
+          <span class="string">"locations"</span>: [
+            {
+              <span class="string">"uuid"</span>: <span class="string">"e21c8326-18e1-465c-8a84-266b2aadc4b0"</span>,
+              <span class="string">"x"</span>: <span class="number">15</span>,
+              <span class="string">"y"</span>: <span class="number">70.48</span>,
+              <span class="string">"coord"</span>: <span class="string">"A1"</span>,
+              <span class="string">"radius"</span>: <span class="number">5</span>
             }
-        }]
+          ],
+          <span class="string">"UUID"</span>: <span class="string">"72713be2-1ffe-430e-ba69-350b39402e56"</span>
+        },
+        <span class="string">"items"</span>: [
+          {
+            <span class="string">"uuid"</span>: <span class="string">"3a49012f-17f8-4b1f-b205-172d625940b2"</span>,
+            <span class="string">"label"</span>: <span class="string">"A1"</span>,
+            <span class="string">"item"</span>: {
+              <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,
+              <span class="string">"uuid"</span>: <span class="string">"cdb4fe1c-96f8-4e0f-82c9-c291312f3611"</span>,
+              <span class="string">"type"</span>: <span class="string">"well"</span>,
+              <span class="string">"label"</span>: <span class="string">"A1"</span>,
+              <span class="string">"displaySettings"</span>: {
+                <span class="string">"sprite"</span>: null
+              },
+              <span class="string">"physicalProperties"</span>: {
+                <span class="string">"radius"</span>: <span class="number">5</span>,
+                <span class="string">"depth"</span>: <span class="number">12</span>,
+                <span class="string">"capacity"</span>: <span class="number">200</span>,
+                <span class="string">"consumable_clearance"</span>: <span class="number">2</span>,
+                <span class="string">"travel_clearance"</span>: <span class="number">0</span>,
+                <span class="string">"length"</span>: <span class="number">0</span>
+              },
+              <span class="string">"runtimeData"</span>: {
+                <span class="string">"Volume"</span>: <span class="number">0</span>,
+                <span class="string">"HasBeenAssigned"</span>: <span class="keyword">false</span>,
+                <span class="string">"Consumed"</span>: <span class="keyword">false</span>,
+                <span class="string">"Optional"</span>: <span class="keyword">false</span>,
+                <span class="string">"IsSample"</span>: <span class="keyword">false</span>,
+                <span class="string">"Exclude"</span>: <span class="keyword">false</span>,
+                <span class="string">"Coordinate"</span>: null,
+                <span class="string">"CustomID"</span>: null
+              },
+              <span class="string">"UUID"</span>: <span class="string">"cdb4fe1c-96f8-4e0f-82c9-c291312f3611"</span>
+            },
+            <span class="string">"locationId"</span>: <span class="string">"e21c8326-18e1-465c-8a84-266b2aadc4b0"</span>
+          }
+        ],
+        <span class="string">"displaySettings"</span>: {
+          <span class="string">"markerLabel"</span>: <span class="string">""</span>,
+          <span class="string">"displayCategory"</span>: <span class="string">"Wells"</span>,
+          <span class="string">"prefab"</span>: <span class="string">"transparent"</span>
+        },
+        <span class="string">"runtimeSettings"</span>: {
+          <span class="string">"CustomID"</span>: <span class="string">""</span>
+        }
     }
 }
 </pre>
@@ -785,7 +813,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
-<i style="float:right;">Last updated 2024-10-09 10:23:31 </i>
+<i style="float:right;">Last updated 2024-10-09 11:26:46 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
