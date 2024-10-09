@@ -208,11 +208,11 @@ or a <a href="../manual/commands.md.html#Resume_Script">resume command</a> is se
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone to collect tip from
         </li>
         <li><span class="parameter">coord</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Coordinate in zone containing an un-consumed tip to use
         </li>
     </ul>
@@ -222,7 +222,7 @@ or a <a href="../manual/commands.md.html#Resume_Script">resume command</a> is se
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.acquiretip(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>)</pre>
+        <pre class="example">veon.<span class="function-name">acquiretip</span>(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>)</pre>
     </ul>
 
 </dd>
@@ -238,11 +238,11 @@ liquid.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone to collect tip from
         </li>
         <li><span class="parameter">coord</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Coordinate in zone containing an un-consumed tip to use
         </li>
         <li><span class="parameter">volume</span>
@@ -264,7 +264,7 @@ liquid.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.aspirate(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>, <span class="number">50.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
+        <pre class="example">veon.<span class="function-name">aspirate</span>(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>, <span class="number">50.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
     </ul>
 
 </dd>
@@ -297,7 +297,7 @@ liquid.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.cleartip(<span class="number">20.0</span>, <span class="number">50.0</span>, <span class="number">500.0</span>)</pre>
+        <pre class="example">veon.<span class="function-name">cleartip</span>(<span class="number">20.0</span>, <span class="number">50.0</span>, <span class="number">500.0</span>)</pre>
     </ul>
 
 </dd>
@@ -317,7 +317,7 @@ liquid.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.closevalve()</pre>
+        <pre class="example">veon.<span class="function-name">closevalve</span>()</pre>
     </ul>
 
 </dd>
@@ -342,7 +342,7 @@ liquid.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.delay(<span class="number">2000</span>)</pre>
+        <pre class="example">veon.<span class="function-name">delay</span>(<span class="number">2000</span>)</pre>
     </ul>
 
 </dd>
@@ -390,7 +390,7 @@ is made with the liquid surface, or the maximum dip distance has been travelled.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.dip(<span class="number">29.0</span>, <span class="number">2.0</span>, <span class="number">10</span>)</pre>
+        <pre class="example">veon.<span class="function-name">dip</span>(<span class="number">29.0</span>, <span class="number">2.0</span>, <span class="number">10</span>)</pre>
     </ul>
 
 </dd>
@@ -406,11 +406,11 @@ liquid.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone to collect tip from
         </li>
         <li><span class="parameter">coord</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Coordinate in zone containing an un-consumed tip to use
         </li>
         <li><span class="parameter">volume</span>
@@ -432,7 +432,7 @@ liquid.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.dispense(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>, <span class="number">50.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
+        <pre class="example">veon.<span class="function-name">dispense</span>(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>, <span class="number">50.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
     </ul>
 
 </dd>
@@ -459,7 +459,7 @@ liquid.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.eject()</pre>
+        <pre class="example">veon.<span class="function-name">eject</span>()</pre>
     </ul>
 
 </dd>
@@ -479,11 +479,11 @@ by the clearance parameter of the object.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone of the position
         </li>
         <li><span class="parameter">position</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Position to go to in the zone
         </li>
     </ul>
@@ -493,7 +493,7 @@ by the clearance parameter of the object.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.gozone(<span class="string">'Zone2'</span>, <span class="string">'A1'</span>)</pre>
+        <pre class="example">veon.<span class="function-name">gozone</span>(<span class="string">'Zone2'</span>, <span class="string">'A1'</span>)</pre>
     </ul>
 
 </dd>
@@ -522,35 +522,35 @@ errorthreshold  20
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone to collect tip from
         </li>
         <li><span class="parameter">position</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Position in zone to collect tip from
         </li>
         <li><span class="parameter">search_position</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          The position to switch to search speed
         </li>
         <li><span class="parameter">max_position</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Maximum position to move to before failing
         </li>
         <li><span class="parameter">search_speed</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Slower speed used to engage tip
         </li>
         <li><span class="parameter">high_speed</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Higher speed used to make the initial Z movement
         </li>
         <li><span class="parameter">current_limit</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Current limit to determine whether a tip was engaged
         </li>
         <li><span class="parameter">error_threshold</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Threshold around the limit
         </li>
     </ul>
@@ -560,7 +560,7 @@ errorthreshold  20
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.gettip(<span class="string">'Tips'</span>, <span class="string">'D4'</span>, <span class="number">93.75</span>, <span class="number">115</span>, <span class="number">7.5</span>, <span class="number">60</span>, <span class="number">32000</span>, <span class="number">20</span>)</pre>
+        <pre class="example">veon.<span class="function-name">gettip</span>(<span class="string">'Tips'</span>, <span class="string">'D4'</span>, <span class="number">93.75</span>, <span class="number">115</span>, <span class="number">7.5</span>, <span class="number">60</span>, <span class="number">32000</span>, <span class="number">20</span>)</pre>
     </ul>
 
 </dd>
@@ -614,7 +614,7 @@ the liquid level.</p>
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.getvol(<span class="number">40.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
+        <pre class="example">veon.<span class="function-name">getvol</span>(<span class="number">40.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
     </ul>
 
 </dd>
@@ -661,9 +661,9 @@ the liquid level.</p>
 
     <h3>Usage:</h3>
     <ul>
-        <li><pre class="example">veon.goabs(<span class="number">100.0</span>, <span class="number">57.5</span>, <span class="number">66.0</span>)</pre></li>
-        <li><pre class="example">veon.goabs(<span class="number">0</span>, <span class="number">0</span>, <span class="number">83.2</span>)</pre></li>
-        <li><pre class="example">veon.goabs(<span class="keyword">nil</span>, <span class="number">50.0</span>, <span class="keyword">nil</span>)</pre></li>
+        <li><pre class="example">veon.<span class="function-name">goabs</span>(<span class="number">100.0</span>, <span class="number">57.5</span>, <span class="number">66.0</span>)</pre></li>
+        <li><pre class="example">veon.<span class="function-name">goabs</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">83.2</span>)</pre></li>
+        <li><pre class="example">veon.<span class="function-name">goabs</span>(<span class="keyword">nil</span>, <span class="number">50.0</span>, <span class="keyword">nil</span>)</pre></li>
     </ul>
 
 </dd>
@@ -699,7 +699,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.gorel(<span class="number">3.0</span>,<span class="number">0.0</span>,-<span class="number">5.0</span>)</pre>
+        <pre class="example">veon.<span class="function-name">gorel</span>(<span class="number">3.0</span>,<span class="number">0.0</span>,-<span class="number">5.0</span>)</pre>
     </ul>
 
 </dd>
@@ -727,7 +727,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example"><span class="keyword">local</span> x, y, z = veon.getejectentryposition(<span class="number">1</span>)</pre>
+        <pre class="example"><span class="keyword">local</span> x, y, z = veon.<span class="function-name">getejectentryposition</span>(<span class="number">1</span>)</pre>
     </ul>
 
 </dd>
@@ -745,11 +745,11 @@ movement in specified by the x/y/z distances separated by commas.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone of the position
         </li>
         <li><span class="parameter">position</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Position to get the depth of
         </li>
     </ul>
@@ -759,7 +759,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example"><span class="keyword">local</span> x, y, z = veon.getpositiondepth(<span class="string">"Zone2"</span>, <span class="string">"A1"</span>)</pre>
+        <pre class="example"><span class="keyword">local</span> x, y, z = veon.<span class="function-name">getpositiondepth</span>(<span class="string">"Zone2"</span>, <span class="string">"A1"</span>)</pre>
     </ul>
 
 </dd>
@@ -774,11 +774,11 @@ movement in specified by the x/y/z distances separated by commas.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Object's zone
         </li>
         <li><span class="parameter">position</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Object's position within the zone
         </li>
     </ul>
@@ -788,7 +788,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.getobjectclearance(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>)</pre>
+        <pre class="example">veon.<span class="function-name">getobjectclearance</span>(<span class="string">"Zone1"</span>, <span class="string">"A1"</span>)</pre>
     </ul>
 
 </dd>
@@ -806,7 +806,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example"><span class="keyword">local</span> x, y, z = veon.getmotorposition()</pre>
+        <pre class="example"><span class="keyword">local</span> x, y, z = veon.<span class="function-name">getmotorposition</span>()</pre>
     </ul>
 
 </dd>
@@ -831,7 +831,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.home()</pre>
+        <pre class="example">veon.<span class="function-name">home</span>()</pre>
     </ul>
 
 </dd>
@@ -858,7 +858,7 @@ movement in specified by the x/y/z distances separated by commas.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.openvalve(<span class="number">200.0</span>)</pre>
+        <pre class="example">veon.<span class="function-name">openvalve</span>(<span class="number">200.0</span>)</pre>
     </ul>
 
 </dd>
@@ -877,7 +877,7 @@ or a <a href="../manual/commands.md.html#Resume_Script">resume command</a> is se
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.pause()</pre>
+        <pre class="example">veon.<span class="function-name">pause</span>()</pre>
     </ul>
 
 </dd>
@@ -900,11 +900,11 @@ unconsumed tips in the zone. When there are no tips remaining the function will 
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">zone</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Zone to collect tip from
         </li>
         <li><span class="parameter">coord</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Coordinate in the zone to begin searching from
         </li>
     </ul>
@@ -914,7 +914,7 @@ unconsumed tips in the zone. When there are no tips remaining the function will 
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.pickuptip(<span class="string">'Zone1'</span>, <span class="string">'A1'</span>)</pre>
+        <pre class="example">veon.<span class="function-name">pickuptip</span>(<span class="string">'Zone1'</span>, <span class="string">'A1'</span>)</pre>
     </ul>
 
 </dd>
@@ -991,7 +991,7 @@ unconsumed tips in the zone. When there are no tips remaining the function will 
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.putvol(<span class="number">20.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
+        <pre class="example">veon.<span class="function-name">putvol</span>(<span class="number">20.0</span>, <span class="number">200.0</span>, <span class="keyword">false</span>)</pre>
     </ul>
 
 </dd>
@@ -1032,7 +1032,7 @@ unconsumed tips in the zone. When there are no tips remaining the function will 
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.putall(<span class="number">200.0</span>)</pre>
+        <pre class="example">veon.<span class="function-name">putall</span>(<span class="number">200.0</span>)</pre>
     </ul>
 
 </dd>
@@ -1077,11 +1077,11 @@ unconsumed tips in the zone. When there are no tips remaining the function will 
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">type</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Used as the status type in the triggered status
         </li>
         <li><span class="parameter">payload</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Returned in the user_data section of the status payload
         </li>
     </ul>
@@ -1091,8 +1091,8 @@ unconsumed tips in the zone. When there are no tips remaining the function will 
 
     <h3>Usage:</h3>
     <ul>
-        <li><pre class="example">veon.statusevent(<span class="string">'scriptStarted'</span>, <span class="string">'test.vsc'</span>)</pre></li>
-        <li><pre class="example">veon.statusevent(<span class="string">'data'</span>, {\"hello\":\"world\"})</pre></li>
+        <li><pre class="example">veon.<span class="function-name">statusevent</span>(<span class="string">'scriptStarted'</span>, <span class="string">'test.vsc'</span>)</pre></li>
+        <li><pre class="example">veon.<span class="function-name">statusevent</span>(<span class="string">'data'</span>, {\"hello\":\"world\"})</pre></li>
     </ul>
 
 </dd>
@@ -1113,7 +1113,7 @@ the motor will default to the previously set acceleration.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">axis</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Axis to set the speed/acceleration of
         </li>
         <li><span class="parameter">speed</span>
@@ -1131,8 +1131,8 @@ the motor will default to the previously set acceleration.
 
     <h3>Usage:</h3>
     <ul>
-        <li><pre class="example">veon.spdacc(<span class="string">'y'</span>, <span class="number">50.0</span>, <span class="number">500.0</span>)</pre></li>
-        <li><pre class="example">veon.spdacc(<span class="string">'z'</span>, <span class="number">10.0</span>, <span class="number">0.0</span>)</pre></li>
+        <li><pre class="example">veon.<span class="function-name">spdacc</span>(<span class="string">'y'</span>, <span class="number">50.0</span>, <span class="number">500.0</span>)</pre></li>
+        <li><pre class="example">veon.<span class="function-name">spdacc</span>(<span class="string">'z'</span>, <span class="number">10.0</span>, <span class="number">0.0</span>)</pre></li>
     </ul>
 
 </dd>
@@ -1147,7 +1147,7 @@ the motor will default to the previously set acceleration.
     <h3>Parameters:</h3>
     <ul>
         <li><span class="parameter">axis</span>
-            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.4/manual.html#6.4">string</a></span>
          Axis to set the power of
         </li>
         <li><span class="parameter">state</span>
@@ -1161,7 +1161,7 @@ the motor will default to the previously set acceleration.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.setaxispower(<span class="string">"x"</span>, <span class="keyword">false</span>)</pre>
+        <pre class="example">veon.<span class="function-name">setaxispower</span>(<span class="string">"x"</span>, <span class="keyword">false</span>)</pre>
     </ul>
 
 </dd>
@@ -1192,7 +1192,7 @@ the motor will default to the previously set acceleration.
 
     <h3>Usage:</h3>
     <ul>
-        <pre class="example">veon.togglevalve(pressure, time)</pre>
+        <pre class="example">veon.<span class="function-name">togglevalve</span>(pressure, time)</pre>
     </ul>
 
 </dd>
@@ -1202,8 +1202,8 @@ the motor will default to the previously set acceleration.
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
-<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
-<i style="float:right;">Last updated 2024-09-12 15:08:22 </i>
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-10-09 10:23:31 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
